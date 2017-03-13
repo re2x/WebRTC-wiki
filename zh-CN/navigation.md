@@ -23,9 +23,9 @@
 [编译]()
 
   * # 
-  * [iOS](pages/subitem1.md)
-  * [Android](pages/subitem1.md)
-  * [Windows](pages/subitem1.md)
+  * [iOS](pages/coming-soon.md)
+  * [Android](pages/coming-soon.md)
+  * [Windows](pages/coming-soon.md)
 
 [常用命令](pages/cmd.md)
 
