@@ -15,4 +15,4 @@
 
 请通过 pr 或 **团队成员 push** 内容，谢谢！
 
-成为成员，请联系 rex@re2x.com
+成为成员，请联系 rex@re2x.com ，或者 [点击这里](https://github.com/re2x/WebRTC-wiki/invitations)
