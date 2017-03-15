@@ -56,7 +56,7 @@ target_cpu| 根据设备的系统架构将其设置为“arm”或“arm64”或
 报错 | 描述
 --------- | -------------
 ![](http://upload-images.jianshu.io/upload_images/1528347-ed368100530b0685.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) |检查一下是否生成的cpu架构不符合设备
-![](http://upload-images.jianshu.io/upload_images/1528347-a1bada649be59da2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)| 证书的签名问题 尝试XCode>Preferences>account 更新provisioning profiles
+![](http://upload-images.jianshu.io/upload_images/1528347-0fcce1f019362792.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)| 证书的签名问题 尝试XCode>Preferences>account 更新provisioning profiles
 ![](http://upload-images.jianshu.io/upload_images/1528347-e0e30630e75aebcd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|打包出来的app的provisioning文件 和teamid和app的签名不一致  附上[方法](http://www.jianshu.com/p/b1c4e9395e9f)
 
 
