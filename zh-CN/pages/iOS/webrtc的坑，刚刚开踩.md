@@ -1,4 +1,5 @@
-此篇是源于自己跟团队小伙伴在运行源码demo时一些稀奇古怪问题的坑，望众基共勉之。由于比较杂，所以主要针对命令行跟踪所遇到的问题出发做笔记。
+#webrtc的坑，刚刚开踩
+>此篇是源于自己跟团队小伙伴在运行源码demo时一些稀奇古怪问题的坑，望众基共勉之。由于比较杂，所以主要针对命令行跟踪所遇到的问题出发做笔记。
 
 ## mobileprovision-read -f app/embedded.mobileprovision
  该命令行用于查看app对应的provisonning文件是否和签名对应，其中有几个key可供对比使用：
@@ -14,8 +15,7 @@
     2、为provisonning文件的文件名
     3、当前项目开发者团队组中授权的设备UUID数组
     4、开发者团队名
-    5开发者团队的ID
-       
+    5开发者团队的ID   
 
 ▲ 附带贴一个链接（.mobileprovision文件查询工具)
  <https://github.com/0xc010d/mobileprovision-read>
@@ -33,7 +33,7 @@ md5 embedded.mobileprovision
 ```
 gclient是用来同步代码，在和src同级目录会有一个隐藏.gclient文件，里面记录了基本的代码拉取设置
 src里面的各个目录、甚至子目录，基本上都是一个独立的git库
- gclient sync的命令回去检查整个项目的完整情况，并同步代码
+gclient sync的命令回去检查整个项目的完整情况，并同步代码
 如果gclient sync无法通过，一般都不是代码的问题，是因为工具链或依赖库和当前代码需要的不一致
 gclient是用来同步代码和工具链的
 gn 是用来产生ninja所需的配置文件
@@ -83,15 +83,19 @@ ninja 才是编译的
 1、( mobileprovision-read -f AppRTCMobile.app/embedded.mobileprovision )
 ```
 ![](http://upload-images.jianshu.io/upload_images/1636820-586e30c759d81d0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ```
 与 (codesign -vv -d AppRTCMobile.app )
 ```
 ![](http://upload-images.jianshu.io/upload_images/1636820-45674e12d219a60c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ```
 2、通过命令得到签名的UUID后，增加编译参数（ ios_code_signing_identity="UUID" ）
 ```
 ![](http://upload-images.jianshu.io/upload_images/1636820-dff5934262b59480.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ```
 与 ( xcrun security find-identity -v -p codesigning ）  
 ```
 ![](http://upload-images.jianshu.io/upload_images/1636820-4490b4d9dca8fc6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
