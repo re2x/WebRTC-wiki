@@ -3,6 +3,7 @@
 
 * [Webrtc的坑，刚刚开踩](iOS/webrtc的坑，刚刚开踩.md)
 * [Webrtc笔记-运行demo到ios真机](iOS/Webrtc笔记-运行demo到ios真机.md)
+* [Webrtc笔记-运行demo 遇到的签名问题](iOS/Webrtc笔记-运行demo 遇到的签名问题.md)
 
 
 ## 章节一
