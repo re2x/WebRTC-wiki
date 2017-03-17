@@ -1,6 +1,7 @@
 # Webrtc笔记-运行demo到ios真机
 
->接下来编译源码，目标：运行ios的demo到真机上，直接上步骤
+>接下来编译源码
+>**目标：运行ios的demo到真机上**
 
 ##ios生成xcode项目
 
@@ -35,7 +36,7 @@ target_cpu| 根据设备的系统架构将其设置为“arm”或“arm64”或
 
 ![Paste_Image.png](http://upload-images.jianshu.io/upload_images/1528347-83693c1e19f56675.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-直接打开`all.xcworkspace`就在ide中看到完整的WebRTC项目了！
+打开`all.xcworkspace`就在ide中看到完整的WebRTC项目了！
 
 关于gn的一些操作可以[参考这里](https://chromium.googlesource.com/chromium/src/+/master/tools/gn/README.md)
 
@@ -46,10 +47,11 @@ target_cpu| 根据设备的系统架构将其设置为“arm”或“arm64”或
 
 ![Paste_Image.png](http://upload-images.jianshu.io/upload_images/1528347-727afccd40592b22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-选择设备后直接`command+R`
+选择设备后`command+R`
 
 
 ![Paste_Image.png](http://upload-images.jianshu.io/upload_images/1528347-b9c9ee0f11d60387.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 **如果没问题的话会直接看到真机上已经安装并运行了WebRTC的demo**
 
 
