@@ -30,6 +30,7 @@ codesign -f -s 'iPhone Developer: Thomas Kollbach (7TPNXN7G6K)' Example.app
 
 * 通过运行该的命令进行验证签名身份：
 `xcrun security find-identity -v -p codesigning`
+
 * 要保证你的设备已经添加到这个team下了，通过以上命令得到签名的UUID后，`gn args out/ios_32 -shot`增加编译参数`ios_code_signing_identity="UUID"`如下图，保存并退出编辑
 
 ![](http://upload-images.jianshu.io/upload_images/1528347-5b27e901fbc8fa34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -38,10 +39,11 @@ codesign -f -s 'iPhone Developer: Thomas Kollbach (7TPNXN7G6K)' Example.app
 
 ##4、重新运行到真机
 Done之后，回到xcode，clean一下，重新运行到真机
+
 ![](http://upload-images.jianshu.io/upload_images/1528347-c460acab6f4567b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
 -----
-**参考：[这一篇](./webrtc的坑，刚刚开踩.md)**
+**更多详情可参考：[这一篇](./webrtc的坑，刚刚开踩.md)**
 
