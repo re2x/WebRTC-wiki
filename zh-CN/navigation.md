@@ -32,7 +32,7 @@
 [相关内容]()
 
   * #
-  * [WebRTC SDP 剖析](https://webrtchacks.com/sdp-anatomy/)
+  * [WebRTC SDP 剖析](/sdp-anatomy/)
 
 <!-- A more complex navigation example: ----------------------------------------
 
