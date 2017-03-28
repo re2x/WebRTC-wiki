@@ -34,7 +34,7 @@ vs项目文件位置 out/win_x64/all.sln
 ## Android产生编译配置
 
 ``` shell
-gn gen out/android_arm -args='target_os="android" target_cpu="arm" is_componnent_build=false proprietary_codecs=true use_openh264=true ffmpeg_branding="Chrome"'
+gn gen out/android_arm -args='target_os="android" target_cpu="arm" is_component_build=false proprietary_codecs=true use_openh264=true ffmpeg_branding="Chrome"'
 ```
 
 <!-- more -->
