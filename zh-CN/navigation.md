@@ -35,6 +35,8 @@
   * [WebRTC SDP 剖析](/sdp-anatomy/)
   * [WebRTC Security安全](http://webrtc-security.github.io/)
 
+[笔记](pages/note-list.md)
+
 <!-- A more complex navigation example: ----------------------------------------
 
 [Menu Item 1]()
