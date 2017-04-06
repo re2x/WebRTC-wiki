@@ -4,6 +4,10 @@
 
 * [关闭DTLS](notes/disable-dtls.md)
 
+* [数据只发不收](notes/sendonly.md)
+
+* [关闭音视频混合RTP](notes/disable-rtpmux.md)
+
 ## 调试相关
 
 
