@@ -57,7 +57,9 @@ depot_tools 是同步代码的时候download下来的，但是笔者这里首先
 `````
 这里环境配置也许会遇到以下问题：
 ** Automatic java installation filed **
+
 ![webrtc-0.png](http://upload-images.jianshu.io/upload_images/2516602-407a8f765258d993.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 这里直面意思是在配置jdk环境的时候报错。由于ubuntu会自带openjdk 并且版本是1.7.这里webrtc代码打包的jdk环境是java8（控制台信息也建议jdk 8shifou beianz ），所以这里解决方法是卸载原来的openjdk，自己手动安装jdk,而且版本要求是1.8，这里如何配置jdk，笔者就不说明了~
 
 #### 三、编译参数配置
