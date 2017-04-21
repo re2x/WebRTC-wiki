@@ -15,5 +15,6 @@
 
 ## H264 相关
 
+* [H264测试样本视频](http://samples.mplayerhq.hu/V-codecs/h264/)
 
 ## DTMF 相关
