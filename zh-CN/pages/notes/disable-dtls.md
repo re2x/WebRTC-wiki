@@ -5,7 +5,21 @@
 ``` javascript
 {DtlsSrtpKeyAgreement: "false"}
 ```
-  
+
+关闭 SDES
+
+修改`webrtcsessiondescriptionfactory.cc:134`的SetSdesPolicy方法参数为`cricket::SEC_DISABLED`，如下
+
+``` cpp
+  SetSdesPolicy(dtls_enabled ? cricket::SEC_DISABLED : cricket::SEC_REQUIRED);
+```
+
+改为
+
+``` cpp
+  SetSdesPolicy(cricket::SEC_DISABLED);
+```
+
 ## 参考：
 
 * mediaconstraintsinterface.h
