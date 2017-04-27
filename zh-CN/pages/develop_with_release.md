@@ -10,6 +10,8 @@
 ``` bash
 # 修改git远程库url为内网地址
 git remote set-url origin ssh://webrtc@192.168.51.107/webrtc
+# 拉取代码
+git fetch
 # checkout 59版本
 git checkout branch_59
 # 同步59版本的工具链和依赖库
