@@ -7,11 +7,11 @@
 切换为内网git服务器，内网git地址为：ssh://webrtc@192.168.51.107/webrtc
 
 执行
-```
+``` bash
 # 修改git远程库url为内网地址
 git remote set-url origin ssh://webrtc@192.168.51.107/webrtc
 # checkout 59版本
-git checkout -b branch_59 branch_59
+git checkout branch_59
 # 同步59版本的工具链和依赖库
 gclient sync --jobs 16
 ```
@@ -24,13 +24,13 @@ gclient sync --jobs 16
 
 拉取webrtc.git代码
 
-```
+``` bash
 git clone https://chromium.googlesource.com/external/webrtc.git
 ```
 
 修改 `.git/config` 文件，在 ` [remote “origin”] `节点增加
 
-```
+``` bash
 fetch = +refs/branch-heads/*:refs/remotes/branch-heads/*
 ```
 
@@ -53,7 +53,7 @@ git checkout -b branch_59 branch-heads/59
 ```
 
 ### 修改git库为bare
-```
+``` bash
 git config --bool core.bare false
 ```
 <!--
