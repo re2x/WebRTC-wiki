@@ -1,11 +1,12 @@
 # 基于Release分支的开发
 
+** 最后更新：2017-04-27 10:46:24 **
+
 ## 开发端配置
 
 至少执行了一次[完整的代码拉取](https://webrtc.org/native-code/development/)
 
 切换为内网git服务器，内网git地址为：ssh://webrtc@192.168.51.107/webrtc
-
 执行
 ``` bash
 # 修改git远程库url为内网地址
@@ -14,13 +15,22 @@ git remote set-url origin ssh://webrtc@192.168.51.107/webrtc
 git fetch
 # checkout 59版本
 git checkout branch_59
-# 同步59版本的工具链和依赖库
+# 同步59版本的工具链和依赖库，需要翻墙
 gclient sync --jobs 16
 ```
 
 通过执行以上命令，切换到了内网服务器，并同步了release版本59相关的工具链和依赖库
 
-代码提交请参考[git手册](http://gitref.org/zh/creating/)，编译方面和使用官方库一直
+代码提交请参考[git手册](http://gitref.org/zh/creating/)，编译方面和使用官方库一致，可参考[常用命令](cmd.md)
+
+**如果懒得拉代码，可以使用共享上的压缩包**，git地址也已经切换成本地的了
+
+``` bash
+# Android
+\\192.168.51.124\setup\webrtc_android_20170426_branch_59_localgit.tar.bz2
+# iOS
+\\192.168.51.124\setup\webrtc_ios_20170426_branch_59_localgit.zip
+```
 
 ## git服务器配置
 
