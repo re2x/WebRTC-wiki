@@ -34,13 +34,14 @@
 
 [常用命令](pages/cmd.md)
 
+[笔记](pages/note-list.md)
+
 [相关内容]()
 
   * #
   * [WebRTC SDP 剖析](/sdp-anatomy/)
   * [WebRTC Security安全](http://webrtc-security.github.io/)
 
-[笔记](pages/note-list.md)
 
 <!-- A more complex navigation example: ----------------------------------------
 

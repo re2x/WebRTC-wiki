@@ -1,5 +1,9 @@
 # WebRTC 笔记
 
+# 工具相关
+
+* [WebRTC工具 gn 简介](notes/gn_intro.md)
+
 ## API 相关
 
 <!-- * [WebRTC呼叫流程](notes/webrtc-call-flow.md) -->
