@@ -24,8 +24,8 @@ xcode项目文件位置 out/ios64/all.workspace ，项目包含多个TARGETS,其
 ## windows产生vs2015编译配置
 
 ``` shell
-gn gen out/win_x64 -args="target_cpu=\"x64\" proprietary_codecs=true use_openh264=true ffmpeg_branding=\"Chrome\"" --ide=vs
-gn gen out/win_x86 -args="target_cpu=\"x86\" proprietary_codecs=true use_openh264=true ffmpeg_branding=\"Chrome\"" --ide=vs
+gn gen out/win_x64 -args="target_cpu=\"x64\" proprietary_codecs=true rtc_use_h264=true use_openh264=true ffmpeg_branding=\"Chrome\"" --ide=vs
+gn gen out/win_x86 -args="target_cpu=\"x86\" proprietary_codecs=true rtc_use_h264=true use_openh264=true ffmpeg_branding=\"Chrome\"" --ide=vs
 ```
 
 vs项目文件位置 out/win_x64/all.sln
@@ -34,8 +34,15 @@ vs项目文件位置 out/win_x64/all.sln
 ## Android产生编译配置
 
 ``` shell
-gn gen out/android_arm -args='target_os="android" target_cpu="arm" is_component_build=false proprietary_codecs=true use_openh264=true ffmpeg_branding="Chrome"'
+gn gen out/debug -args='target_os="android" target_cpu="arm" is_component_build=false proprietary_codecs=true rtc_use_h264=true use_openh264=true ffmpeg_branding="Chrome"'
 ```
+**参数说明**
+* proprietary_codecs： 启用ffmpeg进行h264 decode
+
+* rtc_use_h264： 启用ffmpeg进行h264 decode
+
+* proprietary_codecs： 启用ffmpeg进行h264 decode
+
 
 <!-- more -->
 
@@ -43,7 +50,7 @@ gn gen out/android_arm -args='target_os="android" target_cpu="arm" is_component_
 ## Android aar打包（57后面的版本才可用）
 
 ``` shell
-./tools-webrtc/android/build_aar.py --verbose --extra-gn-args='proprietary_codecs=true use_openh264=true ffmpeg_branding="Chrome"'
+./tools-webrtc/android/build_aar.py --verbose --extra-gn-args='is_component_build=false proprietary_codecs=true rtc_use_h264=true use_openh264=true ffmpeg_branding="Chrome"'
 ```
 
 默认生成根目录下 libwebrtc.aar 文件
