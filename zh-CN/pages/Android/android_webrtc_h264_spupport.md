@@ -9,7 +9,7 @@ gn gen out/debug -args='target_os="android" target_cpu="arm" is_component_build=
 
 ** 注意参数顺序，顺序不对可能会产生错误 **
 
-# 实现H264硬编硬解
+# 实现其他平台的H264硬编硬解
 
 具体修改请看 [本次提交](http://192.168.51.107/commit/webrtc/24240686795944ea980c60d9140c8d1742f532cf)
 
