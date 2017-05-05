@@ -1,5 +1,6 @@
 # WebRTC支持Andrroid H264编解码
 
+** 最后更新：2017-05-05  **  by [linzq](mailto:rex@re2x.com) 
 
 ## gn 命令参数
 
