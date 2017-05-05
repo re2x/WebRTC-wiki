@@ -66,7 +66,7 @@ git checkout -b branch_59 branch-heads/59
 
 ### 修改git库为bare
 ``` bash
-git config --bool core.bare false
+git config --bool core.bare true
 ```
 <!--
 
