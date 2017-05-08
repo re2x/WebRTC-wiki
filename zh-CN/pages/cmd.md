@@ -38,12 +38,11 @@ vs项目文件位置 out/win_x64/all.sln
 gn gen out/debug -args='target_os="android" target_cpu="arm" is_component_build=false proprietary_codecs=true rtc_use_h264=true use_openh264=true ffmpeg_branding="Chrome"'
 ```
 **参数说明**
-* proprietary_codecs： 启用ffmpeg进行h264 decode
+* proprietary_codecs： 启用专用编解码器，包括h264/MP3等
 
-* rtc_use_h264： 启用ffmpeg进行h264 decode
+* rtc_use_h264： 启用h264编解码器
 
-* proprietary_codecs： 启用ffmpeg进行h264 decode
-
+* ffmpeg_branding：设置为Chrome才会编译h264相关的库
 
 <!-- more -->
 
