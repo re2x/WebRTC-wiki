@@ -11,4 +11,6 @@
 
 * [Webrtc笔记-运行demo 遇到的签名问题](iOS/Webrtc笔记-运行demo 遇到的签名问题.md)
 
+* [Webrtc笔记-编译Famework动态库报错](iOS/Webrtc笔记-编译Famework动态库报错.md)
+
 
