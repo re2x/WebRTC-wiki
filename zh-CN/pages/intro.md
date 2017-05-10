@@ -1,4 +1,4 @@
-# 什么是WebRTCWebRTC 入门介绍
+# WebRTC 入门介绍
 
 
 ## 什么是WebRTC

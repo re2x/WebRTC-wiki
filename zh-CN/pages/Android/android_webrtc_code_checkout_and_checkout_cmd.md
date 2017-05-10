@@ -8,6 +8,8 @@ export PATH=`pwd`/depot_tools:"$PATH"  # 修改环境变量，建议加到~/.bas
 mkdir webrtc-checkout
 cd webrtc-checkout  
 fetch --nohooks webrtc_android  # fetch webrtc android的代码库基础配置
+# Windows/Linux执行: fetch --nohooks webrtc 
+# iOS执行:           fetch --nohooks webrtc_ios 
 cd src
 git fetch  # fetch webrtc git代码库
 git checkout branch-heads/59 # checkout59的release分支
