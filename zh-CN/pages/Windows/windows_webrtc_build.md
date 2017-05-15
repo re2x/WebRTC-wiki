@@ -58,6 +58,6 @@ gn gen out/win_x86 -args="target_cpu=\"x86\" proprietary_codecs=true rtc_use_h26
 
 ### 项目介绍
 
-请参考 [WebRTC 入门介绍](./intro.md#Demo演示)
+请参考 [WebRTC 入门介绍](../intro.md#Demo演示)
 
 ** 待续 **
