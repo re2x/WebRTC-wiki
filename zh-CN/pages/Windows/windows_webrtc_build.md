@@ -2,6 +2,8 @@
 
 ** 最后更新：2017-5-10 ** by linzq
 
+[TOC]
+
 ## 准备工作
 
 系统要求：
@@ -17,8 +19,10 @@
     关于depot_tools更多的信息，查看[Using depot_tools](http://dev.chromium.org/developers/how-tos/depottools)
 
 * 安装 Visual Studio 2015 Update 3 或更高的版本
+
 * 安装 Windows 10 SDK (10.0.14393)
-* 修改 `控制面板` -> `区域和语言` -> `管理` -> `更改系统区域设置` -> `英语(美国)` ，确定后重启。
+
+* <del>修改 `控制面板` -> `区域和语言` -> `管理` -> `更改系统区域设置` -> `英语(美国)` ，确定后重启。</del>  **新版本无需修改**
 
 更多内容，请看[Checking out and Building Chromium for Windows](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#System-requirements)
 
