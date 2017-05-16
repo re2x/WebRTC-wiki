@@ -12,7 +12,7 @@
 
 工具要求：
 
-* 安装[Install depot_tools](http://dev.chromium.org/developers/how-tos/install-depot-tools)的步骤，安装好depot\_tools及vc发行包，并把depot\_tools目录加到PATH。
+* 按[Install depot_tools](http://dev.chromium.org/developers/how-tos/install-depot-tools)的步骤，安装好depot\_tools及vc发行包，并把depot\_tools目录加到PATH。
 
     关于depot_tools更多的信息，查看[Using depot_tools](http://dev.chromium.org/developers/how-tos/depottools)
 
@@ -56,10 +56,6 @@ gn gen out/win_x86 -args="target_cpu=\"x86\" proprietary_codecs=true rtc_use_h26
 
 ### 项目介绍
 
-<<<<<<< HEAD
 请参考 [WebRTC 入门介绍](../intro.md#Demo演示)
-=======
-请参考 [WebRTC 入门介绍](./intro.md#Demo演示)
->>>>>>> a0329c416656dfbc20808b9153e678430a6b6bea
 
 ** 待续 **
