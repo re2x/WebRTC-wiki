@@ -2,8 +2,6 @@
 
 ** 最后更新：2017-5-10 ** by linzq
 
-[TOC]
-
 ## 准备工作
 
 系统要求：
@@ -58,6 +56,10 @@ gn gen out/win_x86 -args="target_cpu=\"x86\" proprietary_codecs=true rtc_use_h26
 
 ### 项目介绍
 
+<<<<<<< HEAD
 请参考 [WebRTC 入门介绍](../intro.md#Demo演示)
+=======
+请参考 [WebRTC 入门介绍](./intro.md#Demo演示)
+>>>>>>> a0329c416656dfbc20808b9153e678430a6b6bea
 
 ** 待续 **
