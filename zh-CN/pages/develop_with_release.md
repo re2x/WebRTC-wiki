@@ -100,3 +100,4 @@ git remote add origin [url]
 
 * [Working with Release Branches](https://www.chromium.org/developers/how-tos/get-the-code/working-with-release-branches)
 * [git修改远程仓库地址](https://ddnode.com/2015/04/14/git-modify-remote-responsity-url.html)
+* [連猴子都能懂的Git入門指南](https://backlogtool.com/git-guide/tw/intro/intro1_1.html)
