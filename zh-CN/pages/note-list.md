@@ -14,6 +14,8 @@
 
 * [关闭音视频混合RTP](notes/disable-rtpmux.md)
 
+* [调整H264为首选视频编码](notes/h264-prefere-codec.md)
+
 ## 调试相关
 
 ## H264 相关
