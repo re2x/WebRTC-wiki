@@ -25,4 +25,6 @@
 
 * [H264测试样本视频](http://samples.mplayerhq.hu/V-codecs/h264/)
 
+* [调整H264为首选视频编码](notes/h264-prefere-codec.md)
+
 ## DTMF 相关

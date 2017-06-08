@@ -1,6 +1,6 @@
 # 关闭音视频混合RTP
 
-在创建Constraints时，增加key键googUseRtpMUX，值为false。
+在PeerConnection CreateOffer和CreateAnswer方法，对参数中的Constraints对象，增加key键googUseRtpMUX，值为false。
 
 ``` javascript
 {googUseRtpMUX: "false"}
