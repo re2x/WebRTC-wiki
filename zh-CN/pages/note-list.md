@@ -14,7 +14,10 @@
 
 * [关闭音视频混合RTP](notes/disable-rtpmux.md)
 
+* [修改默认视频PayloadType](notes/change_default_video_payload.md)
+
 ## 调试相关
+
 
 ## H264 相关
 

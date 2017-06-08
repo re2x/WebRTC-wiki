@@ -6,9 +6,26 @@
 {DtlsSrtpKeyAgreement: "false"}
 ```
 
-关闭 SDES
+# 关闭 SDES
 
-修改`webrtcsessiondescriptionfactory.cc:134`的SetSdesPolicy方法参数为`cricket::SEC_DISABLED`，如下
+方法一：
+
+在创建PeerConnectionFactory后，调用SetOptions方法，修改disable_encryption=true。代码如下：
+
+``` cpp
+   rtc::scoped_refptr<webrtc::PeerConnectionFactoryInterface>
+      peer_connection_factory_  = webrtc::CreatePeerConnectionFactory();
+  webrtc::PeerConnectionFactoryInterface::Options options;
+  options.disable_encryption = true;
+  options.disable_network_monitor = true;
+  options.network_ignore_mask = 28;
+  peer_connection_factory_->SetOptions(options);
+```
+
+
+方法二：
+
+修改`webrtc/api/webrtcsessiondescriptionfactory.cc:134`的SetSdesPolicy方法参数为`cricket::SEC_DISABLED`，如下
 
 ``` cpp
   SetSdesPolicy(dtls_enabled ? cricket::SEC_DISABLED : cricket::SEC_REQUIRED);
