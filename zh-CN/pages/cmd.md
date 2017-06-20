@@ -5,7 +5,7 @@
 ## iOS产生xcode项目
 
 ``` shell
-gn gen out/ios64 -args="target_os=\"ios\" target_cpu=\"arm64\" is_component_build=false proprietary_codecs=true ios_enable_code_signing=false" --ide=xcode
+gn gen out/ios64 -args="target_os=\"ios\" target_cpu=\"arm64\" is_component_build=false ios_enable_code_signing=false" --ide=xcode
 ```
 xcode项目文件位置 out/ios64/all.workspace ，项目包含多个TARGETS,其中AppRTCMobile是apprtc的ios版本
 

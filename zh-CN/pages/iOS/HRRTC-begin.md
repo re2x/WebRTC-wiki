@@ -9,7 +9,7 @@
 
 1. 参考[常用命令](../cmd.md)，生成项目编译配置文件
 ```
-gn gen out/ios64 -args="target_os=\"ios\" target_cpu=\"arm64\" is_component_build=false proprietary_codecs=true ios_enable_code_signing=false" --ide=xcode
+gn gen out/ios64 -args="target_os=\"ios\" target_cpu=\"arm64\" is_component_build=false ios_enable_code_signing=false" --ide=xcode
 ```
 2. 打开生成的`out/ios64/products.xcodeproj`，项目中的target：`rtc_sdk_framework_objc`即
 `WebRTC.framework`的配置
