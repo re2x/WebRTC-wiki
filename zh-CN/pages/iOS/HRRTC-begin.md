@@ -62,3 +62,15 @@ gn gen out/ios64 -args="target_os=\"ios\" target_cpu=\"arm64\" is_component_buil
 
 1. 使用[iOS FAT库打包](../cmd.md)的脚本生成FAT库
 2. 参考demo的代码和Framework的调用实现功能
+
+如果编译 FAT库是出现如下错误，这是因为Xcode 8.3的问题，需要修改`third_party/usrsctp/`库的代码。相关代码修改的patch在`patch/fix_usrsctplib_ios_fat_build_error.diff`，可直接`cd third_party/usrsctp/`，然后执行`git apply ../../patch/fix_usrsctplib_ios_fat_build_error.diff`修改代码。
+
+``` shell
+../../third_party/usrsctp/usrsctplib/usrsctplib/netinet/sctp_output.c:6020:30: error: taking address of packed member 'time_entered' of class or structure 'sctp_state_cookie' may result in an unaligned pointer value [-Werror,-Waddress-of-packed-member]
+        (void)SCTP_GETTIME_TIMEVAL(&stc.time_entered);
+                                    ^~~~~~~~~~~~~~~~
+../../third_party/usrsctp/usrsctplib/usrsctplib/netinet/sctp_constants.h:1028:46: note: expanded from macro 'SCTP_GETTIME_TIMEVAL'
+#define SCTP_GETTIME_TIMEVAL(x) gettimeofday(x, NULL)
+                                             ^
+1 error generated.
+```
