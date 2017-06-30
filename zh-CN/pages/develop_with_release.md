@@ -6,11 +6,11 @@
 
 至少执行了一次[完整的代码拉取](https://webrtc.org/native-code/development/)
 
-切换为内网git服务器，内网git地址为：ssh://webrtc@192.168.51.107/webrtc
+切换为内网git服务器，内网git地址为：http://192.168.51.107/r/webrtc/.git
 执行
 ``` bash
 # 修改git远程库url为内网地址
-git remote set-url origin ssh://webrtc@192.168.51.107/webrtc
+git remote set-url origin http://192.168.51.107/r/webrtc/.git
 # 拉取代码
 git fetch
 # checkout 59版本
