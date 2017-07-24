@@ -83,6 +83,7 @@ gn gen out/ios64 -args="target_os=\"ios\" target_cpu=\"arm64\" is_component_buil
 2、使用编译framework编译命令，、编译并生成 `WebRTC.framework`
 3、复制`WebRTC.framework`到clone后的库目录，并覆盖原有的
 4、编辑文件`HRWebRTC.podspec`，修改`s.version`的参数为最新的版本号，例如`0.2.0`
-5、打tag `git tag [版本号]`
-6、`git push --tag`
-7、发布版本到私有仓库HoriSpecs `pod repo push HoriSpecs HRWebRTC.podspec`
+5、`git add .` & `git commit -m [log]`
+6、打tag `git tag [版本号]`
+7、`git push --tag`
+8、发布版本到私有仓库HoriSpecs `pod repo push HoriSpecs HRWebRTC.podspec`
