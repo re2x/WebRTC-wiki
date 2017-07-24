@@ -60,7 +60,8 @@ gn gen out/ios64 -args="target_os=\"ios\" target_cpu=\"arm64\" is_component_buil
 
 ## 使用WebRTC.framework
 
-1. 使用[iOS FAT库打包](../cmd.md)的脚本生成FAT库
+1. 使用[iOS FAT库打包](../cmd.md)的脚本生成FAT库  
+`./tools-webrtc/ios/build_ios_libs.sh --extra-gn-args='proprietary_codecs=true'`
 2. 参考demo的代码和Framework的调用实现功能
 
 如果编译 FAT库是出现如下错误，这是因为Xcode 8.3的问题，需要修改`third_party/usrsctp/usrsctplib`库的代码。相关代码修改的patch在`patch/fix_usrsctplib_ios_fat_build_error.diff`，可直接`cd third_party/usrsctp/usrsctplib`，然后执行`git apply ../../../patch/fix_usrsctplib_ios_fat_build_error.diff`修改代码。
