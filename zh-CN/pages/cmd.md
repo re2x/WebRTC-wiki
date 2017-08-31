@@ -16,7 +16,7 @@ xcode项目文件位置 out/ios64/all.workspace ，项目包含多个TARGETS,其
 ## iOS FAT库打包（57后面的版本才可用）
 
 ``` shell
-./tools-webrtc/ios/build_ios_libs.sh --extra-gn-args='proprietary_codecs=true'
+./tools-webrtc/ios/build_ios_libs.sh --extra-gn-args='is_debug=true'
 ```
 
 默认生成根目录下 out_ios_libs/WebRTC.framework 文件
