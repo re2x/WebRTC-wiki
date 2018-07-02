@@ -53,6 +53,11 @@ gn gen out/debug -args='target_os="android" target_cpu="arm" is_component_build=
 ./tools-webrtc/android/build_aar.py --arch='armeabi-v7a' --verbose --extra-gn-args='is_component_build=false proprietary_codecs=true rtc_use_h264=true use_openh264=true ffmpeg_branding="Chrome"'
 ```
 
+优化版命令
+``` shell
+./tools-webrtc/android/generate_aar.py --tmp-dir='./out' --arch='armeabi-v7a arm64-v8a' --verbose --extra-gn-args='is_component_build=false proprietary_codecs=true rtc_use_h264=true use_openh264=true ffmpeg_branding="Chrome"'
+```
+
 默认生成根目录下 libwebrtc.aar 文件
 
 
